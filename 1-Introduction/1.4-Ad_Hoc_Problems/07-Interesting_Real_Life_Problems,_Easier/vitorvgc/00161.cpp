@@ -28,17 +28,6 @@ struct TrafficLight {
     }
 };
 
-int main2() {
-
-    TrafficLight t(10);
-
-    for(int i = 0; i < 25; ++i) {
-        char c = t.increment();
-        printf("%d: %d %d %c\n", i, t.cycle, t.t, c);
-    }
-    return 0;
-}
-
 int main() {
     int a, b, c;
     while(scanf("%d %d %d", &a, &b, &c) && a|b|c) {
